@@ -1,0 +1,16 @@
+package managerpages;
+
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+
+    private WebDriver driver;
+
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public LoginPage getloginPage() {
+        return new LoginPage(driver);
+    }
+}
